@@ -11,4 +11,8 @@ describe('vowelCheck', function() {
       // expect(vowelCheck("another")).to.equal("anotheray");
         expect(quCheck("question")).to.equal(true);
     });
+    it("is true for any word that starts with an y", function() {
+      // expect(vowelCheck("another")).to.equal("anotheray");
+        expect(yCheck("yoga")).to.equal(true);
+  });
 });

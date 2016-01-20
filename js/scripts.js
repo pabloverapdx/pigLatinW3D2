@@ -16,3 +16,9 @@ var quCheck = function(word) {
     return false;
   }
 };
+
+var yCheck = function(word) {
+  if (word.match(/^[yY]/)) {
+    return true;
+  }
+};
