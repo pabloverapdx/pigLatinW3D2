@@ -1,9 +1,18 @@
 var vowelCheck = function(word) {
-  var vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"];
-  // if(word.match(/^[aeiouAEIOU]/)
-  for (var i = 0; i < vowels.length; i++) {
-    if(word.substr(0, 1 ) == vowels[i]) {
-      return word + "ay";
-    }
+  if (word.match(/^[aeiouAEIOU]/)) {
+    // return word + "ay";
+    return true;
+  }
+  else{
+    return false;
+  }
+};
+
+var quCheck = function(word) {
+  if (word.match(/^[quQU]/)) {
+    return true;
+  }
+  else{
+    return false;
   }
 };
