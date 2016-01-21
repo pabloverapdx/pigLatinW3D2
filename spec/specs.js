@@ -14,4 +14,9 @@ describe('vowelCheck', function() {
     it("exists if a word returns", function() {
       expect(translate("another")).to.equal("anotheray");
     });
+    it("parses to an array if input is a sentance", function() {
+      var parsedTest = ["a", "long", "sentence"];
+      expect(sentenceParse("a long sentence")).to.eql(parsedTest);
+    });
+
 });
